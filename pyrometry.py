@@ -111,5 +111,5 @@ def calculate_for_grid(grid):
     return error
 
 # Parallel execution over grid sizes
-grid_sizes = np.arange(2, 31, 1)
+grid_sizes = np.arange(2, 32, 1)
 errors = Parallel(n_jobs=-1)(delayed(calculate_for_grid)(grid) for grid in grid_sizes)
